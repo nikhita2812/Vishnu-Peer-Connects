@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(879px at 10.4% 22.3%, rgba(83, 83, 149, 0.705) 0%, rgb(222, 221, 226) 93.6%);
+}
+body {
+    height: 100%;
+    font-family: 'popins',sans-serif;
+    background-image: url('C:/Users/Victus/Downloads/wallpapers/vishnu logo.jpg'); /* Using forward slashes */
+    background-size: center;
+    background-position: fill;
+    background-repeat: no-repeat;
+    /* ... rest of your styles ... */
+}
+:root {
+    --b1: rgb(220, 101, 241);
+    --b2: #607ec4;
+    --b3: #181818;
+    -box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+a {
+    text-decoration: none;
+    color: #9b6161;
+}
+
+li {
+    list-style: none;
+}
+
+.fas {
+    color: #665555;
+}
+
+.logo {
+    text-align: none;
+    color: transparent;
+    font-size: 1.3rem;
+    font-weight: 800;
+    position: absolute;
+    left: 2%;
+    flex: 1;
+    -webkit-text-stroke: 1px rgb(134, 233, 233);
+    background-image: url(img/red.jpeg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 700px 0;
+    }
+}
+
+nav {
+    background-color: #222;
+    padding: 24px 40px 22px 70px;
+    border: 1px solid #222;
+    border-left: none;
+    border-right: none;
+    position: fixed;
+    width: 100vw;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul div.items {
+    display: inline-flex;
+    padding: 0 10px;
+    margin-left: 29rem;
+    text-transform: uppercase;
+}
+
+nav ul div.items a {
+    font-size: 15px;
+    padding: 0 15px;
+    transition: .6s ease;
+
+}
+
+nav ul div.items a:hover,
+nav ul div.items a.active {
+    color: #7b7777;
+}
+
+
+
+nav ul .search {
+    height: 35px;
+    width: 240px;
+    display: flex;
+    background: #d7aaaa;
+    border-radius: 6px;
+
+}
+
+
+
+nav ul .search input {
+    height: 100%;
+    width: 20px;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul .search .icon {
+
+    height: 100%;
+    width: 40px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #f1e4e4;
+    border-radius: 0 5px 5px 0;
+}
+
+nav ul .search .icon:hover {
+    background: red;
+}
+
+nav ul .search .icon span {
+    color: #222;
+    font-size: 18px;
+}
+
+
+
+.profile {
+
+    margin-left: 20px;
+    border: 1px solid rgb(202, 169, 169);
+    height: 35px;
+    width: 35px;
+    line-height: 33px;
+    text-align: center;
+
+    background: rgb(66, 65, 65);
+    border-radius: 50%;
+}
+
+.profile:hover {
+    background: gray;
+}
+
+
+.row-img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 130px;
+    margin-right: 10px;
+    transform: transform .8s;
+}
+
+.row h2 {
+    padding: 20px 0 0 0;
+}
+
+.row-imgs {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 20px;
+
+    margin-left: -12px;
+}
+
+.row-img:hover {
+    transform: scale(1.1);
+}
+
+.row-img-lrg {
+    max-height: 180px;
+}
+
+.row-img-lrg :hover {
+    transform: scale(1.09);
+}
+
+.row-imgs::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.row {
+    color: rgb(177, 139, 139);
+    margin-left: 20px;
+}
+
+.banner {
+    background-image: url(img/onep.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: rgb(218, 212, 212);
+    object-fit: contain;
+    height: 470px;
+    transform: ease 2s;
+
+}
+
+
+
+.banner-text {
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 0.3rem;
+}
+
+.banner-discri {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 180px;
+}
+
+.banner-btn {
+    display: inline-block;
+    background: rgb(117, 60, 60);
+    color: #865a5a;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    height: 2.3rem;
+    width: 7rem;
+    line-height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+}
+
+.banner-btn i {
+    padding-left: -15px;
+}
+
+.banner-btn:hover {
+    opacity: 0.9;
+}
+
+.banner-fade {
+    margin-top: 165px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+.nav_transparent {
+    background-color: transparent;
+}
+
+.content {
+    position: relative;
+    margin-top: 6%;
+    left: -22%;
+}
+
+.c1 {
+    margin-top: 4%;
+    left: -15%;
+
+}
+
+@media(max-width:1450px) {
+
+
+    nav li.search,
+    nav li.profile {
+        display: none;
+    }
+}

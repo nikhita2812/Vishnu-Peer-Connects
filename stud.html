@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background:  radial-gradient(879px at 10.4% 22.3%, rgba(187, 105, 166, 0.705) 0%, rgb(67, 54, 116) 93.6%) ;/*center/cover no-repeat;*/
+            font-family: 'popins',sans-serif;
+            color: rgb(2, 14, 13);
+            position: relative;
+        }
+
+        header {
+            background-color: rgba(153, 151, 221, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #cfc1cd;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(59, 2, 40);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .categories {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .category {
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(18, 228, 36, 0.5);
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sub-categories {
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .sub-category {
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(151, 133, 142, 0.5);
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        /* Add styles for the small image */
+        .small-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+    <!-- Add the small image at the top left -->
+        <img src="C:\Users\Victus\Downloads\wallpapers\vishnu logo.jpg" alt="Small Image" class="small-image">
+        <header>
+            <h1>VISHNU PEER CONNECTS</h1>
+            <h2>A place to share your knowledge</h2>
+        </header>
+
+        <nav>
+            <a href="#" onclick="showSubCategories('home')">Home</a>
+            <a href="#">Queries</a>
+            <a href="#">Notifications</a>
+            <a href="#">Bookmarks</a>
+            <a href="#">Profile</a>
+        </nav>
+
+        <div class="categories">
+            <div class="category" onclick="showSubCategories('student')"><a href="homepage.html">Student</a></div>
+            <div class="category" onclick="showSubCategories('alumni')">Alumni</div>
+            <div class="category" onclick="showSubCategories('management')">Management</div>
+        </div>
+        <img src="C:\Users\Victus\Downloads\books-removebg-preview.png">
+        <img align="right" src="C:\Users\Victus\Downloads\graduation-removebg-preview.png" height="400px">
+    </section>
+</body>
+</html>
